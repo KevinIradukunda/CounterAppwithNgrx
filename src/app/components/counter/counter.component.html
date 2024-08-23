@@ -1,0 +1,27 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card text-center shadow-lg p-3 mb-5 bg-white rounded" style="width: 20rem;">
+      <div class="card-body " >
+        <h5 class="card-title">Counter Value</h5>
+        <h1 class="display-2">{{ count$ | async }}</h1>
+        <div class="btn-group mb-3" role="group" aria-label="Counter Controls">
+          <button class="btn btn-primary btn-lg" (click)="increment()">+</button>
+          <button class="btn btn-danger btn-lg" (click)="decrement()">-</button>
+          <button class="btn btn-warning btn-lg" (click)="reset()">Reset</button>
+        </div>
+        <div class="input-group mb-1">
+          <input type="number" class="form-control" [(ngModel)]="incrementValue" placeholder="Enter number to increment by">
+          <div class="input-group-append">
+            <button class="btn btn-secondary " (click)="incrementBy()"> + By</button>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" [(ngModel)]="decrementValue" placeholder="Enter number to decrement by">
+          <div class="input-group-append">
+            <button class="btn btn-secondary decremmentby" (click)="decrementBy()"> - By</button>
+          </div>
+        </div>
+        <button class="btn btn-success btn-lg mt-3" (click)="undo()">Undo</button>
+      </div>
+    </div>
+  </div>
+  
