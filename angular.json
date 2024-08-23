@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "counterapp": {
+      "root": "",
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -16,7 +17,6 @@
           "standalone": false
         }
       },
-      "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -89,6 +89,8 @@
     }
   },
   "cli": {
+    "root": "",
+    "projectType": "application",
     "analytics": "38890d92-1060-4c5f-9a5a-6b34d029462e"
   }
   }}
